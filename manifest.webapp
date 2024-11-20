@@ -1,0 +1,26 @@
+{
+	"version": "1.0",
+	"name": "File Transfer",
+	"description": "Allows copying files between devices",
+	"launch_path": "/index.html",
+	"icons": {
+		"128": "/res/icon128.png",
+		"512": "/res/icon512.png"
+	},
+	"developer": {
+		"name": "Michael Müller",
+		"url": "https://github.com/Schnark"
+	},
+	"default_locale": "en",
+	"activities": {
+		"share": {
+			"filters": {
+				"number": {"value": 1},
+				"blobs": {"required": true}
+			},
+			"disposition": "inline",
+			"returnValue": false,
+			"href": "/index.html?mode=inline"
+		}
+	}
+}

@@ -1,0 +1,72 @@
+html,
+body {
+	font-family: sans;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	background: #d40;
+	color: #fff;
+	margin: 0;
+	text-align: center;
+	padding: 0.15em;
+}
+
+h2 {
+	margin: 0.5em;
+}
+
+p {
+	margin: 1em;
+}
+
+button {
+	display: block;
+	width: 100%;
+	background: #00f;
+	color: #fff;
+	margin: 0;
+	padding: 0.5em;
+	border: 0;
+	border-radius: 0.25em;
+	text-align: center;
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:disabled {
+	background: #444;
+	color: #aaa;
+	cursor: auto;
+}
+
+button.abort {
+	background: #f00;
+}
+
+input,
+select,
+textarea {
+	font-size: inherit;
+}
+
+textarea {
+	width: 100%;
+	height: 3em;
+}
+
+#server {
+	width: 15em;
+}
+
+#len {
+	width: 3em;
+	text-align: right;
+}
+
+#log li {
+	font-size: 90%;
+	display: block;
+}

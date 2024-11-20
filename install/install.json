@@ -1,0 +1,16 @@
+{
+	"@comment": "Note that the code to transform these data into a webpage is in https://github.com/Schnark/schnark.github.io",
+	"title": {
+		"en": "File Transfer – App for Firefox OS",
+		"de": "File Transfer – App für Firefox OS"
+	},
+	"serviceworker": false,
+	"icon": "res/icon-128.png",
+	"screenshots": [
+		"1.png"
+	],
+	"desc": {
+		"en": ["This app allows you to transfer files between devices. Pick the file to send and enter the generated code on the other device. The file will be transferred and you can store it.", "On a device with Firefox OS you can also choose this app when sharing a file.", "Note that you should trust the operator of the server you use, so you should click the link and read about it. On a Firefox OS device you will have to do so anyway to manually accept the certificate."],
+		"de": ["Diese App erlaubt es Dateien zwischen Geräten zu kopieren. Wähle die zu sendende Datei aus und gib auf dem anderen Gerät den erzeugten Code ein. Die Datei wird übertragen, anschließend kannst du sie speichern.", "Auf Geräten mit Firefox OS kannst du die App auch auwählen, wenn du eine Datei teilst.", "Beachte, dass du dem Betreiber des verwendeten Servers trauen solltest, klicke dazu den Link an und lies über den Server. Auf einem Firefox-OS-Gerät musst du dies ohnehin tun um das Zertifikat manuell zu akzeptieren."]
+	}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>File Transfer</title>
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/png" sizes="512x512" href="res/icon512.png">
+<link rel="icon" type="image/svg+xml" sizes="any" href="icon.svg">
+<link rel="stylesheet" href="res/app.css">
+<script src="res/lib/pako.min.js" defer></script>
+<script src="res/app.js" defer></script>
+</head><body>
+<h1>File Transfer</h1>
+<section id="main">
+<h2>Send file</h2>
+<form id="sendform">
+<p><label>File: <input type="file" id="file"></label></p>
+<p><button id="send">Send file</button></p>
+</form>
+<h2>Receive file</h2>
+<form id="receiveform">
+<p><label>Code: <input id="code"></label></p>
+<p><button id="receive">Receive file</button></p>
+</form>
+<ul id="files"></ul>
+<h2>Config</h2>
+<form id="configform">
+<p><label>Server: <select id="server">
+<option value="https://duct.schollz.com/">duct.schollz.com</option>
+<option value="https://patchbay.pub/">patchbay.pub</option>
+</select></label></p>
+<p><small><a href="" id="about" target="_blank">About the server</a> – The server must be the same for sender and receiver. Make sure you trust its operator.</small></p>
+<p><label>Key length: <input type="number" id="len" min="1"></label></p>
+<p><small>Longer keys help against attackers who try to receive your file before you do, but this is unlikely anyway.</small></p>
+<p><label><input type="checkbox" id="compress"> Compress</label></p>
+<p><small>Should compression actually increase the size, the data will be sent uncompressed.</small></p>
+<p><label>Extensions excluded from compression:<br><textarea id="nocompress"></textarea></label></p>
+<p><small>Files with the listed extensions will never be compressed.</small></p>
+<p><label><input type="checkbox" id="obfuscate"> Obfuscate</label></p>
+<p><small>Obfuscation is not encryption and will not really help against attackers.</small></p>
+<p><button id="save">Save config</button></p>
+</form>
+</section>
+<section id="action" hidden>
+<p id="info"></p>
+<p><button id="abort"></button></p>
+<ol id="log"></ol>
+</section>
+</body></html>
